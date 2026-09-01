@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORNOVA — Wear the Art</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#">WORNOVA<span>®</span></a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" onclick="toggleCart()">Cart <b id="cartCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ART / CLOTHING / CULTURE</p>
+        <h1>WEAR<br><em>THE ART.</em></h1>
+        <p class="hero-text">Original artwork. Everyday clothing. Made for people who don't want to blend in.</p>
+        <a class="btn" href="#shop">Explore Collection</a>
+      </div>
+      <div class="hero-art">
+        <div class="art-card">
+          <span>WN / 01</span>
+          <strong>WORNOVA</strong>
+          <small>CREATE · WEAR · REPEAT</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee"><span>WORNOVA · ART YOU CAN WEAR · WORNOVA · ART YOU CAN WEAR · </span></section>
+
+    <section id="shop" class="shop">
+      <div class="section-head">
+        <div><p class="eyebrow">THE DROP</p><h2>Featured pieces</h2></div>
+        <p>Small-batch designs made to stand out.</p>
+      </div>
+      <div class="products">
+        <article class="product">
+          <div class="product-img art-one"><span>01</span><b>WORNOVA</b></div>
+          <div class="product-info"><div><h3>Nova Core Tee</h3><p>Heavyweight cotton · Black</p></div><strong>₹899</strong></div>
+          <button class="add" onclick="addToCart('Nova Core Tee',899)">Add to cart</button>
+        </article>
+        <article class="product">
+          <div class="product-img art-two"><span>02</span><b>NO SIGNAL</b></div>
+          <div class="product-info"><div><h3>No Signal Tee</h3><p>Oversized fit · Charcoal</p></div><strong>₹999</strong></div>
+          <button class="add" onclick="addToCart('No Signal Tee',999)">Add to cart</button>
+        </article>
+        <article class="product">
+          <div class="product-img art-three"><span>03</span><b>WN HOODIE</b></div>
+          <div class="product-info"><div><h3>Nova Heavy Hoodie</h3><p>Fleece · Jet black</p></div><strong>₹1,499</strong></div>
+          <button class="add" onclick="addToCart('Nova Heavy Hoodie',1499)">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div><p class="eyebrow">WHO WE ARE</p><h2>Clothes are the canvas.</h2></div>
+      <p>WORNOVA is an independent art-led clothing label. We turn original ideas into pieces you can actually live in. No boring basics. No copy-paste designs. Just wearable art.</p>
+    </section>
+
+    <section class="founders">
+      <div>
+        <p class="eyebrow">OUR PEOPLE</p>
+        <h2>FOUNDERS OF WORNOVA</h2>
+      </div>
+      <div class="founder-names">
+        <div class="founder">RAJAT</div>
+        <div class="founder">RIHAN</div>
+        <div class="founder">JAVED</div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <p class="eyebrow">JOIN THE NOVA</p>
+      <h2>Something new is<br><em>always coming.</em></h2>
+      <a class="btn light" href="#contact">Stay in the loop</a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div><a class="logo" href="#">WORNOVA<span>®</span></a><p>Wear the art.</p></div>
+    <div class="footer-links"><a href="#shop">Shop</a><a href="#story">About</a><a href="mailto:hello@wornova.in">Email</a><a href="#">Instagram</a></div>
+    <small>© 2026 WORNOVA. All rights reserved.</small>
+  </footer>
+
+  <aside id="cart" class="cart">
+    <div class="cart-head"><h2>Your Cart</h2><button onclick="toggleCart()">×</button></div>
+    <div id="cartItems"><p class="empty">Your cart is empty.</p></div>
+    <div class="cart-total"><span>Total</span><strong id="total">₹0</strong></div>
+    <button class="checkout" onclick="checkout()">Checkout</button>
+  </aside>
+  <div id="overlay" class="overlay" onclick="toggleCart()"></div>
+  <script src="script.js"></script>
+</body>
+</html>
