@@ -2,3 +2,10 @@ let cart=[];function addToCart(name,price){cart.push({name,price});renderCart();
 function closeAd() {
   document.getElementById("adPopup").style.display = "none";
 }
+function openSearch() {
+  const search = prompt("Search WORNOVA products:");
+  
+  if (search) {
+    alert("You searched for: " + search);
+  }
+}
