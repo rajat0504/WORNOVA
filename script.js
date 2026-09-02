@@ -8,4 +8,6 @@ function openSearch() {
     alert("You searched for: " + search);
   }
 }
-
+function closeAd() {
+  document.getElementById("adPopup").style.display = "none";
+}
