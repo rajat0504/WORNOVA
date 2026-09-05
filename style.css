@@ -39,3 +39,12 @@
   cursor: pointer;
   z-index: 2;
 }
+.wornova-ad {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wornova-ad img {
+    width: 100%;
+    display: block;
+}
